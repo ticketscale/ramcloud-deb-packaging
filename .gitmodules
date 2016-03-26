@@ -1,0 +1,3 @@
+[submodule "RAMCloud"]
+	path = RAMCloud
+	url = https://github.com/PlatformLab/RAMCloud.git

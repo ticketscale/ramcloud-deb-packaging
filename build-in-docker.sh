@@ -1,3 +1,4 @@
+#!/bin/bash
 ls -la /data && \
 cd /data/RAMCloud/ && \
 git submodule update --init --recursive && \

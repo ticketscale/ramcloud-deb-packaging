@@ -1,6 +1,7 @@
 #!/bin/bash
 ls -la /data && \
 cd /data/RAMCloud/ && \
+apt-get install git && \
 git submodule update --init --recursive && \
 add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
 add-apt-repository -y 'deb http://us.archive.ubuntu.com/ubuntu/ trusty main universe' && \

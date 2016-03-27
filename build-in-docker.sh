@@ -1,13 +1,16 @@
 #!/bin/bash
 ls -la /data && \
 cd /data/RAMCloud/ && \
-apt-get install git && \
-git submodule update --init --recursive && \
-add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
-add-apt-repository -y 'deb http://us.archive.ubuntu.com/ubuntu/ trusty main universe' && \
 apt-get update && \
-apt-get install -y libzookeeper-mt-dev protobuf-compiler libprotobuf-dev libboost-all-dev doxygen=1.7.6.1-2ubuntu1 && \
-apt-get install -y g++-4.9 && \
+apt-get install -y software-properties-common python-software-properties build-essential liberror-perl git libpcre3 libpcre3-dev && \
+add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
+echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true |  /usr/bin/debconf-set-selections && \
+add-apt-repository ppa:webupd8team/java && \
+git submodule update --init --recursive && \
+apt-get update && \
+# add-apt-repository -y 'deb http://us.archive.ubuntu.com/ubuntu/ trusty main universe' && \
+apt-get install -y libzookeeper-mt-dev protobuf-compiler libprotobuf-dev libboost-all-dev doxygen oracle-java8-installer && \
+apt-get install -y g++-4.9 wget && \
 export CXX="g++-4.9" && \
 export CC="gcc-4.9" && \
 wget http://launchpadlibrarian.net/57653337/doxygen_1.7.1-2_amd64.deb && \

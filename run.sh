@@ -1,2 +1,3 @@
 #!/bin/bash
-docker run  -v $(pwd):/data ubuntu:15.04 /data/build-in-docker.sh
+echo "Running Docker"
+docker run  -v $(pwd):/data  -m 4096M -c 4096 ubuntu:14.04 /data/build-in-docker.sh

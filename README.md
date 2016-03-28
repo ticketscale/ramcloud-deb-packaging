@@ -6,7 +6,7 @@ The deb is available at https://public-debs.ticketscale.io/
 To install add new repository to /etc/apt/sources.list:
 
 ```
-deb https://public-debs.ticketscale.io/ trusty main
+deb [arch=amd64] http://public-debs.ticketscale.io/ticketscale-public/ trusty main
 ```
 
 And import key that is used to sign the release:

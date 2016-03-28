@@ -15,4 +15,4 @@ And import key that is used to sign the release:
 wget -O - https://www.ticketscale.io/ticketscale.gpg.key|apt-key add -
 ```
 
-See [https://ticketscale.io/opensource.html](ticketscale.io/opensource.html) for more info.
+See [https://ticketscale.io/opensource.html](https://ticketscale.io/opensource.html) for more info.

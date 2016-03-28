@@ -2,7 +2,7 @@
 ls -la /data && \
 cd /data/RAMCloud/ && \
 apt-get update && \
-apt-get install -y software-properties-common python-software-properties build-essential liberror-perl git libpcre3 lib32ncurses5-dev libpcre3-dev && \
+apt-get install -y software-properties-common python-software-properties build-essential liberror-perl git libpcre3 lib32ncurses5-dev lib64ncurses5 libssl-dev libpcre3-dev && \
 add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true |  /usr/bin/debconf-set-selections && \
 add-apt-repository ppa:webupd8team/java && \

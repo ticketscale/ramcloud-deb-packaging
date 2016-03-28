@@ -1,5 +1,6 @@
 # ramcloud-deb-packaging
-Contains the files required for packaging RamCloud as a deb file
+Contains the files required for packaging RamCloud as a deb file.
+
 The deb is available at https://public-debs.ticketscale.io/
 
 This is a apt repo containing the packaged up debs that we open source.
